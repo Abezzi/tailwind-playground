@@ -3,12 +3,22 @@ import Button from './Button'
 function App() {
   return (
     <div>
-      <div><Button primary>Hola</Button></div>
-      <div><Button>something</Button></div>
-      <div><Button>coca cola</Button></div>
-      <div><Button>pepe</Button></div>
-      <div><Button>no se llama</Button></div>
-      <div><Button>hell yea</Button></div>
+      <div><Button>plain</Button></div>
+      <div><Button primary>primary</Button></div>
+      <div><Button secondary>secondary</Button></div>
+      <div><Button warning>warning</Button></div>
+      <div><Button danger>danger</Button></div>
+      <div><Button success>success</Button></div>
+      <div><Button outline>outline</Button></div>
+      <div><Button rounded>rounded</Button></div>
+      <h3>some mixes</h3>
+      <div><Button secondary rounded>secondary rounded</Button></div>
+      <div><Button danger rounded>danger rounded</Button></div>
+      <div><Button primary outline>primary outline</Button></div>
+      <div><Button secondary outline>secondary outline</Button></div>
+      <div><Button danger outline>danger outline</Button></div>
+      <div><Button warning outline>warning outline</Button></div>
+      <div><Button success outline>sucess outline</Button></div>
     </div>
   )
 }
