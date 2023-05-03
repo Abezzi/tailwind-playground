@@ -1,9 +1,19 @@
 import Button from './Button'
+import { GoBell } from 'react-icons/go'
 
 function App() {
+  const handleClick = () => {
+    console.log('clicked the button!');
+  };
+
   return (
     <div>
-      <div><Button>plain</Button></div>
+      <div>
+        <Button onClick={handleClick}>
+          <GoBell />
+          plain
+        </Button>
+      </div>
       <div><Button primary>primary</Button></div>
       <div><Button secondary>secondary</Button></div>
       <div><Button warning>warning</Button></div>
@@ -19,7 +29,7 @@ function App() {
       <div><Button danger outline>danger outline</Button></div>
       <div><Button warning outline>warning outline</Button></div>
       <div><Button success outline>sucess outline</Button></div>
-    </div>
+    </div >
   )
 }
 
